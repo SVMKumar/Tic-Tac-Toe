@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <div>
+        <h2 class="info">PRESS ANY KEY TO START!!</h2>
+    </div>
+    <div class="screen1 display">
+        <div id="pop-up">
+            <div>
+                <form" class="form">
+                    <label for="name1">PLAYER NAME</label>
+                    <input type="text" id="name1" name="name1"><br>
+                    <button type="button" class="btn" onclick="changeName1()">Save</button>
+                    <button type="button" class="btn" onclick="cancel1()">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="screen2 display">
+        <div id="pop-up">
+            <div>
+                <form class="form">
+                    <label for="name2">PLAYER NAME</label>
+                    <input type="text" id="name2" name="name2"><br>
+                    <button type="button" class="btn" onclick="changeName2()">Save</button>
+                    <button type="button" class="btn" onclick="cancel2()">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="screen3 display">
+        <div class="exit">
+            <div class="form">
+                <h2 class="winner"></h2>
+                <button type="button" class="btn" onclick="window.close()">Exit</button>
+                <button type="button" class="btn" id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul class="full-board display">
+            <li class="scoreboard">
+                <h2 class="player1">PLAYER X</h2>
+                <h3 id="scoreX">SCORE : 0</h3>
+            </li>
+            <li>
+                <ol class="game-board">
+                    <li class="box" id="0"></li>
+                    <li class="box" id="1"></li>
+                    <li class="box" id="2"></li>
+                    <li class="box" id="3"></li>
+                    <li class="box" id="4"></li>
+                    <li class="box" id="5"></li>
+                    <li class="box" id="6"></li>
+                    <li class="box" id="7"></li>
+                    <li class="box" id="8"></li>
+                </ol>
+            </li>
+            <li class="scoreboard">
+                <h2 class="player2">PLAYER O</h2>
+                <h3 id="scoreO">SCORE : 0</h3>
+            </li>
+        </ul>
+    </div>
+    <div class="player-info">
+        <ul>
+            <li>
+                <h2 class="player1">PLAYER X</h2>
+                <button id="e1" class="btn">Edit</button>
+            </li>
+            <li>
+                <h2 class="player2">PLAYER O</h2>
+                <button id="e2" class="btn">Edit</button>
+            </li>
+        </ul>
+    </div>
+    <input type="button" value="Restart" class="btn display" id="btn">
+    <input type="button" value="Exit" class="btn display" id="exit">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
